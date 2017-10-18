@@ -1,0 +1,77 @@
+{
+  "name": "@dvdagames/ed-tightbeam",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Tightbeam is a broadcast application for Elite: Dangerous Journals",
+  "main": "app/window.js",
+  "scripts": {
+    "clean": "cleandir ./app/",
+    "copy:main": "copyfiles -u 2 src/application/window.js app/",
+    "copy:html": "copyfiles -u 2 src/application/index.html app/",
+    "copy:templates": "copyfiles -u 2 src/templates/package.json app/",
+    "copy:icon": "copyfiles -u 2 src/external/tightbeam.ico app/external",
+    "electron": "electron .",
+    "watch": "webpack --watch",
+    "eslint": "npm run lint",
+    "build": "npm run clean && webpack -p",
+    "generate": "npm run copy:main & npm run copy:html & npm run copy:templates & npm run copy:icon",
+    "start": "npm run generate && npm run electron",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVDAGames/ed-tightbeam.git"
+  },
+  "author": "dvdagames",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DVDAGames/ed-tightbeam/issues"
+  },
+  "homepage": "https://github.com/DVDAGames/ed-tightbeam",
+  "keywords": [
+    "elite: dangerous",
+    "elite dangerous",
+    "journal",
+    "elite",
+    "dangerous",
+    "ed"
+  ],
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "@dvdagames/elite-dangerous-journal-server": "^2.4.2",
+    "electron": "^1.7.9",
+    "hapi": "^16.6.2",
+    "inert": "^4.2.1",
+    "joi": "^13.0.0",
+    "open": "0.0.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-dir": "^1.0.3",
+    "copyfiles": "^1.2.0",
+    "cssloader": "^1.1.1",
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.19.0",
+    "svg-react-loader": "^0.4.5",
+    "webpack": "^3.8.1"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "ed-tightbeam",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tightbeam is a broadcast application for Elite: Dangerous Journals",
+  "keywords": [
+    "elite: dangerous",
+    "elite dangerous",
+    "journal",
+    "elite",
+    "dangerous",
+    "ed"
+  ],
+  "homepage": "https://github.com/DVDAGames/ed-tightbeam",
+  "bugs": {
+    "url": "https://github.com/DVDAGames/ed-tightbeam/issues"
+  },
+  "author": "dvdagames",
+  "main": "window.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVDAGames/ed-tightbeam.git"
+  },
+  "scripts": {
+    "clean": "cross-conf-env del-cli --force ../dist/npm_package_version",
+    "package:osx": "cross-conf-env electron-packager . npm_package_electron_appName --platform=darwin --arch=x64 --asar --out=\"../dist/npm_package_version\" --app-version=npm_package_version --app-copyright=npm_package_electron_appCopyright --app-bundle-id=npm_package_electron_appBundleId --app-helper-id=npm_package_electron_appBundleId --app-categoy-type=npm_package_electron_appCategoyType",
+    "package:win": "cross-conf-env electron-packager . npm_package_electron_appName --platform=win32 --arch=all --asar --out=\"../dist/npm_package_version\" --app-version=npm_package_version --app-copyright=npm_package_electron_appCopyright --version-string.CompanyName=npm_package_electron_versionString_companyName --version-string.ProductName=npm_package_electron_versionString_productName --icon=external/terminal.ico",
+    "package:linux": "cross-conf-env electron-packager . npm_package_electron_appName --platform=linux --arch=all --asar --out=\"../dist/npm_package_version\" --app-version=npm_package_version --app-copyright=npm_package_electron_appCopyright --version-string.CompanyName=npm_package_electron_versionString_companyName",
+    "package:all": "npm run package:win",
+    "package": "npm run clean && npm run package:all"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.5.1",
+    "electron-prebuilt": "^1.4.13",
+    "del-cli": "0.2.1",
+    "cross-conf-env": "1.1.2"
+  },
+  "dependencies": {
+    "electron": "^1.4.15",
+    "es6-promise": "^4.0.5",
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0",
+    "joi": "^10.2.2",
+    "open": "0.0.5",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2",
+    "shelljs": "^0.7.6",
+    "uuid-lib": "0.0.6"
+  },
+  "engines": {
+    "node": ">=5.x.x",
+    "npm": ">=3.x.x"
+  },
+  "electron": {
+    "appName": "E:D Tightbeam",
+    "appCopyright": "Copyright 2017 Dead Villager Dead Adventurer Games",
+    "appBundleId": "com.dvdagames.ed-tightbeam" ,
+    "appCategoryType": "public.app-category.utilities",
+    "helperBundleId": "com.dvdagames.ed-tightbeam",
+    "versionString": {
+      "companyName": "DVDA Games",
+      "productName": "E:D Tightbeam"
+    }
+  }
+}
