@@ -43,7 +43,8 @@
     ]
   },
   "dependencies": {
-    "@dvdagames/elite-dangerous-journal-server": "^2.4.2",
+    "@dvdagames/elite-dangerous-journal-server": "^2.5.1",
+    "css-loader": "^0.28.7",
     "electron": "^1.7.9",
     "hapi": "^16.6.2",
     "inert": "^4.2.1",
@@ -51,7 +52,7 @@
     "open": "0.0.5",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-router": "^4.2.0"
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -60,7 +61,6 @@
     "babel-preset-react": "^6.24.1",
     "clean-dir": "^1.0.3",
     "copyfiles": "^1.2.0",
-    "cssloader": "^1.1.1",
     "electron-prebuilt": "^1.4.13",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
