@@ -1,9 +1,9 @@
 
-# E:D Tightbeam
+# ED Tightbeam
 
-This application is designed to be run alongside *Elite: Dangerous*.
+This application is designed to be run alongside *Elite Dangerous*.
 
-It leverages the [Elite: Dangerous Journal Server](https://github.com/DVDAGames/elite-dangerous-journal-server) to broadcast Events
+It leverages the [Elite Dangerous Journal Server](https://github.com/DVDAGames/elite-dangerous-journal-server) to broadcast Events
 from the Journal in real-time across a WebSocket server that any client on your
 local network can connect to.
 
@@ -32,6 +32,6 @@ Check out the [CHANGELOG](https://github.com/DVDAGames/ed-tightbeam/blob/master/
 
 ## Acknowledgements
 
-- *Elite: Dangerous* is © 1984 - 2017 Frontier Developments plc.
-- [Elite: Dangerous Community Developers](https://edcd.github.io/) for documentation
+- *Elite Dangerous* is © 1984 - 2017 [Frontier Developments plc](https://www.frontier.co.uk/).
+- [Elite Dangerous Community Developers](https://edcd.github.io/) for documentation
 and discussions
