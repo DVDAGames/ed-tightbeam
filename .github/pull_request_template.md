@@ -1,4 +1,4 @@
-Fixes # `[insert Issue # here]`
+Fixes `#[insert Issue # here]`
 
 **Proposed Changes**:
 

@@ -40,7 +40,7 @@ app.on('window-all-closed', () => {
 app.on('will-finish-launching', () => {
   const JournalServer = new EliteDangerousJournalServer({
     port,
-    serviceName: 'E:D Tightbeam',
+    serviceName: 'ED Tightbeam',
     headers: {
       tightbeam: true,
     },

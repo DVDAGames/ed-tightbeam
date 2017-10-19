@@ -2,7 +2,7 @@
   "name": "@dvdagames/ed-tightbeam",
   "private": true,
   "version": "0.0.0",
-  "description": "Tightbeam is a broadcast application for Elite: Dangerous Journals",
+  "description": "Tightbeam is a broadcast application for Elite Dangerous Journals",
   "main": "app/window.js",
   "scripts": {
     "clean": "cleandir ./app/",
@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/DVDAGames/ed-tightbeam",
   "keywords": [
-    "elite: dangerous",
     "elite dangerous",
     "journal",
     "elite",

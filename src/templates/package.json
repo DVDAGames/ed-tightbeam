@@ -2,7 +2,7 @@
   "name": "ed-tightbeam",
   "version": "0.0.0",
   "private": true,
-  "description": "Tightbeam is a broadcast application for Elite: Dangerous Journals",
+  "description": "Tightbeam is a broadcast application for Elite Dangerous Journals",
   "keywords": [
     "elite: dangerous",
     "elite dangerous",
@@ -53,14 +53,14 @@
     "npm": ">=3.x.x"
   },
   "electron": {
-    "appName": "E:D Tightbeam",
+    "appName": "ED Tightbeam",
     "appCopyright": "Copyright 2017 Dead Villager Dead Adventurer Games",
     "appBundleId": "com.dvdagames.ed-tightbeam" ,
     "appCategoryType": "public.app-category.utilities",
     "helperBundleId": "com.dvdagames.ed-tightbeam",
     "versionString": {
       "companyName": "DVDA Games",
-      "productName": "E:D Tightbeam"
+      "productName": "ED Tightbeam"
     }
   }
 }

@@ -1,7 +1,7 @@
 
 **Please try to answer the following, if possible.**
 
-**Version**: `E:D Tightbeam Version here`
+**Version**: `ED Tightbeam Version here`
 
 ### What happened?
 
@@ -15,6 +15,6 @@
 
 *description here*
 
-### Did this impact the E:D Tightbeam application or a connected client?
+### Did this impact the ED Tightbeam application or a connected client?
 
 *description here*
