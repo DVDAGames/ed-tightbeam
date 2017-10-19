@@ -1,7 +1,7 @@
 
 ## Introduction
 
-Thanks for your interest in contributing to **E:D Tightbeam**!
+Thanks for your interest in contributing to **ED Tightbeam**!
 
 We're excited to have you help out.
 
